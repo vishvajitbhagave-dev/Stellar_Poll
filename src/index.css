@@ -21,6 +21,8 @@
   --red-dim:     rgba(248,113,113,0.12);
   --yellow:      #fbbf24;
   --yellow-dim:  rgba(251,191,36,0.12);
+  --orange:      #fb923c;
+  --orange-dim:  rgba(251,146,60,0.12);
   --text:        #e8e8ff;
   --text2:       #8888bb;
   --text3:       #44446a;
@@ -28,6 +30,7 @@
   --mono:        'JetBrains Mono', monospace;
   --r:           12px;
   --r2:          8px;
+  --shadow:      0 4px 24px rgba(0,0,0,0.4);
 }
 
 html, body, #root {
@@ -41,16 +44,18 @@ html, body, #root {
 ::-webkit-scrollbar-track { background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
 
-@keyframes spin       { to { transform: rotate(360deg); } }
-@keyframes pulse      { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
-@keyframes fadeUp     { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
-@keyframes fadeIn     { from { opacity:0; } to { opacity:1; } }
-@keyframes pop        { 0% { transform:scale(0.88); opacity:0; } 65% { transform:scale(1.03); } 100% { transform:scale(1); opacity:1; } }
-@keyframes slideDown  { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
-@keyframes barFill    { from { width:0; } to { width:var(--w); } }
-@keyframes glow       { 0%,100% { box-shadow:0 0 12px var(--accent-glow); } 50% { box-shadow:0 0 28px var(--accent-glow),0 0 50px var(--accent-dim); } }
+@keyframes spin        { to { transform: rotate(360deg); } }
+@keyframes pulse       { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
+@keyframes fadeUp      { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn      { from { opacity:0; } to { opacity:1; } }
+@keyframes pop         { 0% { transform:scale(0.88); opacity:0; } 65% { transform:scale(1.03); } 100% { transform:scale(1); opacity:1; } }
+@keyframes slideDown   { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes shimmer     { 0%{background-position:-200% center} 100%{background-position:200% center} }
+@keyframes skeletonPulse { 0%,100%{opacity:0.4} 50%{opacity:0.8} }
+@keyframes progressBar { from{width:0} to{width:var(--target)} }
+@keyframes countUp     { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
 
-.fade-up   { animation: fadeUp  0.4s ease both; }
-.fade-in   { animation: fadeIn  0.25s ease both; }
-.pop-in    { animation: pop     0.35s ease both; }
-.slide-down{ animation: slideDown 0.25s ease both; }
+.fade-up    { animation: fadeUp   0.4s ease both; }
+.fade-in    { animation: fadeIn   0.25s ease both; }
+.pop-in     { animation: pop      0.35s ease both; }
+.slide-down { animation: slideDown 0.25s ease both; }
