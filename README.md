@@ -1,20 +1,23 @@
 # ◈ StellarPoll 
- A complete end-to-end live polling dApp on **Stellar Testnet** powered by Soroban smart contracts, with loading states, caching, and 30 unit tests.
 
-## 🔗Important Links
-
-| Item | Link |
-|---|---|
-| 🌐 GitHub Repository | https://github.com/vishvajitbhagave-dev/Stellar_Poll |
-| 📋 Contract Explorer | https://stellar.expert/explorer/testnet/contract/CDSVXG7VBBP2IASOP4V4ARRZNVPI2VHX5ARJEY7ZZD6K2WCGFAC54S4V |
-| 🔗 Deploy TX | https://stellar.expert/explorer/testnet/tx/41fc8025e30c4a788b2deac516a60cfa761976b185d7b6b61d6c93e5e6043b7d |
-| 🔗 Init TX | https://stellar.expert/explorer/testnet/tx/2eaba20d07fab964a757d9b5c957fede094d7009eaa456e4317d537759f41680 |
-| 📹 Demo Video | [Add your video link here] |
-| 🌐 Live Demo | [Add your Vercel/Netlify link here — Optional] |
+> A complete end-to-end live polling dApp on **Stellar Testnet** powered by Soroban smart contracts, with loading states, caching, and 30 unit tests.
 
 ---
 
-## 📖 Project Description
+## Important Links
+
+| Item | Link |
+|---|---|
+|  GitHub Repository | https://github.com/vishvajitbhagave-dev/Stellar_Poll |
+|  Contract Explorer | https://stellar.expert/explorer/testnet/contract/CDSVXG7VBBP2IASOP4V4ARRZNVPI2VHX5ARJEY7ZZD6K2WCGFAC54S4V |
+|  Deploy TX | https://stellar.expert/explorer/testnet/tx/41fc8025e30c4a788b2deac516a60cfa761976b185d7b6b61d6c93e5e6043b7d |
+|  Init TX | https://stellar.expert/explorer/testnet/tx/2eaba20d07fab964a757d9b5c957fede094d7009eaa456e4317d537759f41680 |
+|  Demo Video | [Add your video link here] |
+|  Live Demo | [Add your Vercel/Netlify link here — Optional] |
+
+---
+
+## Project Description
 
 **StellarPoll** is a fully decentralized live polling dApp where every vote is permanently recorded on the Stellar blockchain via a Soroban smart contract. No backend server, no database — everything runs on-chain.
 
@@ -41,7 +44,7 @@ Users can:
 
 ---
 
-## 🆕 New Features Added in Orange Belt (vs Yellow Belt)
+##  New Features Added in Orange Belt (vs Yellow Belt)
 
 | Feature | Description |
 |---|---|
@@ -60,7 +63,7 @@ Users can:
 
 ---
 
-## 🧪 Tests — 30 Passing
+##  Tests — 30 Passing
 
 Run tests with:
 ```bash
@@ -82,11 +85,11 @@ Tests       30 passed (30)
 Duration    ~1.6s
 ```
 
-> 📸 Screenshot of test output — see below
+>  Screenshot of test output — see below
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 ### 1. Wallet Options Modal
 > Add screenshot showing 3 wallet options (Freighter, xBull, LOBSTR)
@@ -102,11 +105,11 @@ Duration    ~1.6s
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
-| Frontend | React 18 + Vite (JavaScript only — no TypeScript) |
+| Frontend | React 18 + Vite (JavaScript) |
 | Testing | Vitest + @testing-library/react |
 | Wallet | Freighter API v3 |
 | Blockchain | Stellar Testnet |
@@ -115,7 +118,7 @@ Duration    ~1.6s
 
 ---
 
-## 🚀 Setup — Run Locally
+## Setup — Run Locally
 
 ### Step 1 — Clone the repository
 ```bash
@@ -141,7 +144,7 @@ Open **http://localhost:5173**
 
 ---
 
-## 🧪 Running Tests
+## Running Tests
 
 ```bash
 npm test
@@ -154,7 +157,7 @@ npm run test:watch
 
 ---
 
-## 🦀 Smart Contract
+## Smart Contract
 
 **Language:** Rust (Soroban SDK)
 **Location:** `contract/src/lib.rs`
@@ -194,7 +197,7 @@ stellar contract invoke --id YOUR_CONTRACT_ID --network testnet --source YOUR_AC
 
 ---
 
-## 💾 Caching Implementation
+## Caching Implementation
 
 The app implements a basic in-memory caching system in `src/stellar.js`:
 
@@ -218,7 +221,7 @@ Flow:
 
 ---
 
-## 🔄 Loading States
+## Loading States
 
 | State | What User Sees |
 |---|---|
@@ -232,7 +235,7 @@ Flow:
 
 ---
 
-## ❌ Error Handling (3 Types)
+## Error Handling 
 
 | Error Type | When It Happens | What User Sees |
 |---|---|---|
@@ -243,7 +246,7 @@ Flow:
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 stellar-poll/
@@ -268,7 +271,7 @@ stellar-poll/
 
 ---
 
-## 📝 Commit History
+## Commit History
 
 | Commit | Description |
 |---|---|
@@ -278,7 +281,7 @@ stellar-poll/
 
 ---
 
-## 🔗 Resources
+## Resources
 
 - [Stellar Testnet Explorer](https://stellar.expert/explorer/testnet)
 - [Freighter Wallet](https://freighter.app)
