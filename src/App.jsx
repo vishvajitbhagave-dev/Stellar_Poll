@@ -82,9 +82,9 @@ function ProgressRing({ pct, color, size = 48 }) {
 
 function WalletModal({ onClose, onConnectFreighter, loading, error }) {
   const WALLETS = [
-    { id: 'freighter', name: 'Freighter',   icon: '🚀', note: 'Recommended — fully integrated', url: null },
-    { id: 'xbull',    name: 'xBull Wallet', icon: '🐂', note: 'Click to install',               url: 'https://xbull.app' },
-    { id: 'lobstr',   name: 'LOBSTR',       icon: '🦞', note: 'Click to install',               url: 'https://lobstr.co' },
+    { id: 'freighter', name: 'Freighter',   note: 'Recommended — fully integrated', url: null },
+    { id: 'xbull',    name: 'xBull Wallet', note: 'Click to install',               url: 'https://xbull.app' },
+    { id: 'lobstr',   name: 'LOBSTR',       note: 'Click to install',               url: 'https://lobstr.co' },
   ]
   return (
     <div className="overlay fade-in" onClick={onClose}>
@@ -365,7 +365,7 @@ export default function App() {
           <span className="logo-badge">v2</span>
         </div>
         <div className="header-r">
-          <span className="net-chip">🧪 Testnet</span>
+          <span className="net-chip">Testnet</span>
           {address ? (
             <div className="wallet-pill">
               <span className="pip pip-green" />
@@ -502,11 +502,11 @@ export default function App() {
           <div className="card fade-up">
             <div className="section-label">ℹ️ How It Works</div>
             {[
-              ['🔗', 'Connect Freighter (set to Testnet)'],
-              ['🗳️', 'Pick your answer'],
-              ['✍️', 'Submit — signed on Soroban contract'],
-              ['📡', 'Results refresh live every 10s'],
-              ['🔒', 'One vote per wallet, forever on-chain'],
+              [ 'Connect Freighter (set to Testnet)'],
+              [ 'Pick your answer'],
+              [ 'Submit — signed on Soroban contract'],
+              [ 'Results refresh live every 10s'],
+              [ 'One vote per wallet, forever on-chain'],
             ].map(([icon, text], i) => (
               <div key={i} className="how-row">
                 <span className="how-icon">{icon}</span>
@@ -516,7 +516,7 @@ export default function App() {
           </div>
 
           <div className="card fade-up">
-            <div className="section-label">🚀 Deployment Info</div>
+            <div className="section-label">👨‍💻Deployment Information-</div>
             <div className="deploy-row">
               <span className="deploy-label">Contract</span>
               <a className="deploy-link" href={`https://stellar.expert/explorer/testnet/contract/${CONTRACT_ID}`} target="_blank" rel="noreferrer">
@@ -534,7 +534,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        StellarPoll · Orange Belt · Stellar Journey to Mastery · Testnet Only
+        Decentralized Live Polling dApp 
       </footer>
 
       {showModal && (
