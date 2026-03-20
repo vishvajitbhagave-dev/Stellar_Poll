@@ -44,25 +44,6 @@ Users can:
 
 ---
 
-##  New Features Added in Orange Belt (vs Yellow Belt)
-
-| Feature | Description |
-|---|---|
-| **Skeleton Loader** | Animated grey placeholder boxes shown while blockchain data loads |
-| **Progress Ring** | Animated SVG circular ring per option showing vote percentage |
-| **Progress Bar** | Horizontal bar under each option fills with vote percentage |
-| **Refresh Progress Bar** | Thin bar at top of page animates every 10 seconds showing next refresh |
-| **Button Spinner** | Loading spinner inside Submit button while transaction is processing |
-| **8-Second Cache** | Poll results cached for 8 seconds to reduce RPC calls |
-| **Per-Address Cache** | Remembers if wallet already voted — avoids repeated blockchain checks |
-| **Optimistic UI Update** | Vote count updates instantly on screen after voting without waiting for chain |
-| **Results Breakdown Card** | Dedicated sidebar card showing all options with animated bars |
-| **Deployment Info Card** | Contract address and TX hash shown in sidebar with Explorer links |
-| **30 Unit Tests** | Complete test suite covering all utility functions |
-| **Auto Invalidation** | Cache cleared after voting so next fetch gets fresh results |
-
----
-
 ##  Tests — 30 Passing
 
 Run tests with:
@@ -144,106 +125,25 @@ Open **http://localhost:5173**
 
 ---
 
-## Running Tests
-
-```bash
-npm test
-```
-
-To run in watch mode (re-runs on file save):
-```bash
-npm run test:watch
-```
-
----
-
 ## Smart Contract
-
-**Language:** Rust (Soroban SDK)
-**Location:** `contract/src/lib.rs`
-**Network:** Stellar Testnet
 
 ### Deployed Contract Address
 ```
 CDSVXG7VBBP2IASOP4V4ARRZNVPI2VHX5ARJEY7ZZD6K2WCGFAC54S4V
 ```
-
-### Contract Functions
-
-| Function | Parameters | Returns | Description |
-|---|---|---|---|
-| `init` | `question: String, options: Vec<String>` | — | Initialize poll — called once after deploy |
-| `vote` | `voter: Address, option_index: u32` | — | Cast a vote — requires wallet auth |
-| `get_vote0` | — | `u32` | Vote count for option 0 |
-| `get_vote1` | — | `u32` | Vote count for option 1 |
-| `get_vote2` | — | `u32` | Vote count for option 2 |
-| `get_vote3` | — | `u32` | Vote count for option 3 |
-| `get_total` | — | `u32` | Total votes cast |
-| `get_question` | — | `String` | Poll question |
-| `has_voted` | `voter: Address` | `bool` | Check if address already voted |
-
 ### Deploy Your Own Contract
-
+ 
 ```bash
 cd contract
 stellar contract build
 stellar contract deploy --wasm target/wasm32v1-none/release/stellar_poll_contract.wasm --network testnet --source YOUR_ACCOUNT
 ```
-
+ 
 Initialize (run in CMD):
 ```bash
 stellar contract invoke --id YOUR_CONTRACT_ID --network testnet --source YOUR_ACCOUNT -- init --question "What matters most in a blockchain platform?" --options "[\"Speed and Low Fees\",\"True Decentralization\",\"Developer Experience\",\"Real World Adoption\"]"
 ```
-
----
-
-## Caching Implementation
-
-The app implements a basic in-memory caching system in `src/stellar.js`:
-
-```
-Cache TTL: 8 seconds
-
-┌─────────────────────────────────────────┐
-│              CACHE OBJECT               │
-├─────────────────┬───────────────────────┤
-│ results         │ Last fetched poll data │
-│ timestamp       │ When data was fetched  │
-│ hasVoted{}      │ Per-address vote status│
-└─────────────────┴───────────────────────┘
-
-Flow:
-1. Frontend requests poll results
-2. Cache valid? → Return cached data (fast)
-3. Cache expired? → Fetch from blockchain (slow)
-4. After voting → Invalidate cache immediately
-```
-
----
-
-## Loading States
-
-| State | What User Sees |
-|---|---|
-| **Initial load** | Skeleton loader — animated grey boxes |
-| **Background refresh** | Thin progress bar at top of page |
-| **Submitting vote** | Spinner inside submit button |
-| **TX pending** | Blue banner with spinner |
-| **TX confirming** | Yellow banner with spinner |
-| **TX success** | Green banner with TX hash link |
-| **TX failed** | Red banner with error message |
-
----
-
-## Error Handling 
-
-| Error Type | When It Happens | What User Sees |
-|---|---|---|
-| **Wallet Not Found** | Freighter not installed | Yellow warning banner |
-| **Insufficient Balance** | Less than 1 XLM in wallet | Red warning banner |
-| **Transaction Rejected** | User clicks reject in Freighter | Red error banner |
-| **Already Voted** | Same wallet tries to vote twice | Yellow warning banner |
-
+ 
 ---
 
 ## Project Structure
@@ -268,16 +168,6 @@ stellar-poll/
 ├── package.json             # Node dependencies
 └── README.md                # This file
 ```
-
----
-
-## Commit History
-
-| Commit | Description |
-|---|---|
-| Commit 1 | `feat: Add 30 unit tests with Vitest for Orange Belt` |
-| Commit 2 | `feat: Add skeleton loading states, progress rings and improved UI` |
-| Commit 3 | `feat: Add caching layer, auto-refresh and Orange Belt enhancements` |
 
 ---
 
