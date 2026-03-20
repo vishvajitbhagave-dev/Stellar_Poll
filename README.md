@@ -67,6 +67,7 @@ Duration    ~1.6s
 ```
 
 >  Screenshot of test output — see below
+<img width="1828" height="894" alt="Screenshot 2026-03-20 112758" src="https://github.com/user-attachments/assets/24e583d6-7fa7-49b9-9aa2-8c42527a68b0" />
 
 ---
 
