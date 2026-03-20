@@ -72,17 +72,17 @@ Duration    ~1.6s
 
 ##  Screenshots
 
-### 1. Wallet Options Modal
-> Add screenshot showing 3 wallet options (Freighter, xBull, LOBSTR)
+<img width="1919" height="870" alt="Screenshot 2026-03-20 150549" src="https://github.com/user-attachments/assets/9f65b722-f485-42f3-a823-d16779aec90a" />
 
-### 2. Poll with Results
-> Add screenshot showing poll with progress rings and percentages after voting
+<img width="1919" height="873" alt="Screenshot 2026-03-20 150622" src="https://github.com/user-attachments/assets/683f0c0f-db6c-47e9-8ced-667aff311404" />
 
-### 3. Transaction Success
-> Add screenshot showing "Vote recorded on-chain!" with TX hash link
+<img width="1919" height="935" alt="Screenshot 2026-03-20 150651" src="https://github.com/user-attachments/assets/f3deb4f7-4ea7-459b-9985-d0855e470e6f" />
 
-### 4. Test Output (30 passing)
-> Add screenshot of terminal showing `npm test` with 30 tests passing
+<img width="1919" height="876" alt="Screenshot 2026-03-20 150752" src="https://github.com/user-attachments/assets/7fc39ca2-baac-4091-8367-15acbca84ba8" />
+
+<img width="1919" height="881" alt="Screenshot 2026-03-20 151027" src="https://github.com/user-attachments/assets/ebdbe1bb-1652-4e93-baa9-17e552332a5d" />
+
+<img width="1919" height="881" alt="Screenshot 2026-03-20 151101" src="https://github.com/user-attachments/assets/92d4ee00-93ce-4fb0-99ef-89e6751c5556" />
 
 ---
 
