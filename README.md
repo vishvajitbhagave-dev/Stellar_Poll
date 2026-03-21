@@ -13,7 +13,7 @@
 |  Deploy TX | https://stellar.expert/explorer/testnet/tx/41fc8025e30c4a788b2deac516a60cfa761976b185d7b6b61d6c93e5e6043b7d |
 |  Init TX | https://stellar.expert/explorer/testnet/tx/2eaba20d07fab964a757d9b5c957fede094d7009eaa456e4317d537759f41680 |
 |  Demo Video | [Add your video link here] |
-|  Live Demo | [Add your Vercel/Netlify link here — Optional] |
+|  Live Demo | https://stellar-poll-lac.vercel.app/ |
 
 ---
 
