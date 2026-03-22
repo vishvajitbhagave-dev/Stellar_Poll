@@ -97,14 +97,27 @@ The app is fully responsive across all screen sizes:
 
 ## Screenshots
 
-### Mobile View
-> Add screenshot of app on mobile screen
+### Desktop View
+
+<img width="1919" height="836" alt="Screenshot 2026-03-22 171017" src="https://github.com/user-attachments/assets/41740c7b-23ca-4ea1-94af-bc6694997aa9" />
+
+<img width="1917" height="869" alt="Screenshot 2026-03-22 171042" src="https://github.com/user-attachments/assets/4e810dae-7dec-44ab-a2e7-deda07a60579" />
+
+<img width="1917" height="938" alt="Screenshot 2026-03-22 171133" src="https://github.com/user-attachments/assets/d898a0d6-e6ef-4ea5-8677-701e295f95c5" />
+
+<img width="1919" height="873" alt="Screenshot 2026-03-22 171216" src="https://github.com/user-attachments/assets/49a49b2b-1ed6-486c-a7ad-9b1fbee411b0" />
+
+<img width="1919" height="877" alt="Screenshot 2026-03-22 171322" src="https://github.com/user-attachments/assets/944625c4-6968-44c7-a6ea-33bdc7a2b301" />
+
+<img width="1919" height="854" alt="Screenshot 2026-03-22 171423" src="https://github.com/user-attachments/assets/47b8972c-0cd1-499f-8cd2-c9b8bdca9b13" />
+
 
 ### CI/CD Pipeline
 <img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/b897937d-0c7f-4205-9b8a-803c4fc55b62" />
 
-### Wallet Options
 
+### Mobile View
+<img width="800" height="3612" alt="localhost_5173_" src="https://github.com/user-attachments/assets/0adfcd7e-8856-4663-a333-fd7eb8b0eaa3" />
 
 ### Test Output
 ```
