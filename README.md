@@ -10,7 +10,7 @@
 |---|---|
 |  GitHub Repository | https://github.com/vishvajitbhagave-dev/Stellar_Poll |
 |  Live Demo | https://stellar-poll-lac.vercel.app/ |
-|  Demo Video | [Add your video link here] |
+|  Demo Video | https://drive.google.com/file/d/1j5G2D5yYKPdb1XBmfw4uBYeGEXXS1qm4/view?usp=drivesdk |
 |  Poll Contract | https://stellar.expert/explorer/testnet/contract/CDSVXG7VBBP2IASOP4V4ARRZNVPI2VHX5ARJEY7ZZD6K2WCGFAC54S4V |
 |  Token Contract | https://stellar.expert/explorer/testnet/contract/CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCNM |
 |  Deploy TX | https://stellar.expert/explorer/testnet/tx/41fc8025e30c4a788b2deac516a60cfa761976b185d7b6b61d6c93e5e6043b7d |
