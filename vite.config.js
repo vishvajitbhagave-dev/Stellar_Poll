@@ -3,10 +3,11 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  define: {
-    global: 'globalThis',
-  },
-  build: {
-    target: 'esnext',
+  define: { global: 'globalThis' },
+  build: { target: 'esnext' },
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: './src/__tests__/setup.js',
   },
 })
