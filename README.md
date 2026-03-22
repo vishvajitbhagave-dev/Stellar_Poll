@@ -123,7 +123,7 @@ The app is fully responsive across all screen sizes:
 ```
 Tests  35 passed (35)
 ```
-> Add screenshot of npm test output
+<img width="959" height="504" alt="image" src="https://github.com/user-attachments/assets/91daa872-087c-423a-b35d-25e613ce5dff" />
 
 ---
 
