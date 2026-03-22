@@ -1,59 +1,49 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg:          #060610;
-  --bg2:         #0d0d1f;
-  --bg3:         #13132a;
-  --bg4:         #1a1a35;
-  --border:      #1e1e40;
-  --border2:     #2e2e58;
-  --accent:      #5b8dee;
-  --accent2:     #7aa3f5;
-  --accent-dim:  rgba(91,141,238,0.12);
-  --accent-glow: rgba(91,141,238,0.3);
-  --green:       #34d399;
-  --green-dim:   rgba(52,211,153,0.12);
-  --red:         #f87171;
-  --red-dim:     rgba(248,113,113,0.12);
-  --yellow:      #fbbf24;
-  --yellow-dim:  rgba(251,191,36,0.12);
-  --orange:      #fb923c;
-  --orange-dim:  rgba(251,146,60,0.12);
-  --text:        #e8e8ff;
-  --text2:       #8888bb;
-  --text3:       #44446a;
-  --font:        'Outfit', sans-serif;
-  --mono:        'JetBrains Mono', monospace;
-  --r:           12px;
-  --r2:          8px;
-  --shadow:      0 4px 24px rgba(0,0,0,0.4);
+  --bg:         #04080f;
+  --bg2:        #080f1a;
+  --bg3:        #0c1526;
+  --bg4:        #111e33;
+  --border:     #162035;
+  --border2:    #1e3050;
+  --accent:     #00d4ff;
+  --accent2:    #00a8cc;
+  --accent-dim: rgba(0,212,255,0.10);
+  --accent-glow:rgba(0,212,255,0.25);
+  --gold:       #f5c842;
+  --gold-dim:   rgba(245,200,66,0.12);
+  --green:      #00e676;
+  --green-dim:  rgba(0,230,118,0.12);
+  --red:        #ff5252;
+  --red-dim:    rgba(255,82,82,0.12);
+  --purple:     #b388ff;
+  --purple-dim: rgba(179,136,255,0.12);
+  --text:       #e8f4ff;
+  --text2:      #7090b0;
+  --text3:      #304560;
+  --font:       'Outfit', sans-serif;
+  --mono:       'JetBrains Mono', monospace;
+  --r:          12px;
+  --r2:         8px;
 }
 
-html, body, #root {
-  min-height: 100vh;
-  background: var(--bg);
-  color: var(--text);
-  font-family: var(--font);
-}
+html, body, #root { min-height: 100vh; background: var(--bg); color: var(--text); font-family: var(--font); }
 
-::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
 
 @keyframes spin        { to { transform: rotate(360deg); } }
-@keyframes pulse       { 0%,100% { opacity:1; } 50% { opacity:0.3; } }
-@keyframes fadeUp      { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:translateY(0); } }
-@keyframes fadeIn      { from { opacity:0; } to { opacity:1; } }
-@keyframes pop         { 0% { transform:scale(0.88); opacity:0; } 65% { transform:scale(1.03); } 100% { transform:scale(1); opacity:1; } }
-@keyframes slideDown   { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
+@keyframes pulse       { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes fadeUp      { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn      { from{opacity:0} to{opacity:1} }
+@keyframes pop         { 0%{transform:scale(0.88);opacity:0} 65%{transform:scale(1.03)} 100%{transform:scale(1);opacity:1} }
+@keyframes slideDown   { from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
 @keyframes shimmer     { 0%{background-position:-200% center} 100%{background-position:200% center} }
 @keyframes skeletonPulse { 0%,100%{opacity:0.4} 50%{opacity:0.8} }
-@keyframes progressBar { from{width:0} to{width:var(--target)} }
-@keyframes countUp     { from{opacity:0;transform:translateY(6px)} to{opacity:1;transform:translateY(0)} }
+@keyframes tokenFloat  { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
+@keyframes progressFill{ from{width:0} to{width:100%} }
 
 .fade-up    { animation: fadeUp   0.4s ease both; }
 .fade-in    { animation: fadeIn   0.25s ease both; }
