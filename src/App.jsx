@@ -73,9 +73,9 @@ function TokenBadge({ show }) {
 // ── Wallet Modal ──────────────────────────────────────────────────────────────
 function WalletModal({ onClose, onConnect, loading, error }) {
   const WALLETS = [
-    { id: 'freighter', name: 'Freighter',   icon: '🚀', note: 'Recommended', url: null },
-    { id: 'xbull',    name: 'xBull Wallet', icon: '🐂', note: '↗ Install',   url: 'https://xbull.app' },
-    { id: 'lobstr',   name: 'LOBSTR',       icon: '🦞', note: '↗ Install',   url: 'https://lobstr.co' },
+    { id: 'freighter', name: 'Freighter',    note: 'Recommended', url: null },
+    { id: 'xbull',    name: 'xBull Wallet',  note: '↗ Install',   url: 'https://xbull.app' },
+    { id: 'lobstr',   name: 'LOBSTR',        note: '↗ Install',   url: 'https://lobstr.co' },
   ]
   return (
     <div className="overlay fade-in" onClick={onClose}>
@@ -340,7 +340,7 @@ export default function App() {
           <span className="logo-badge">v3</span>
         </div>
         <div className="header-r">
-          <span className="net-chip">🧪 Testnet</span>
+          <span className="net-chip"> Testnet</span>
           {address ? (
             <div className="wallet-pill">
               <span className="pip" />
@@ -451,7 +451,7 @@ export default function App() {
 
           {/* Stats */}
           <div className="card fade-up">
-            <div className="sec-label">📊 Poll Stats</div>
+            <div className="sec-label"><h3>Poll Stats </h3></div>
             <div className="stats-grid">
               {[
                 { v: pollLoading ? null : results.total, label: 'Total Votes' },
@@ -473,7 +473,7 @@ export default function App() {
           {/* Results */}
           {!pollLoading && results.total > 0 && (
             <div className="card fade-up">
-              <div className="sec-label">🏆 Results</div>
+              <div className="sec-label"><h3>🏆Poll Result</h3></div>
               {POLL_OPTIONS.map((opt, i) => (
                 <div key={i} className="bd-row">
                   <div className="bd-top">
@@ -494,13 +494,13 @@ export default function App() {
 
           {/* How it works */}
           <div className="card fade-up">
-            <div className="sec-label">⚡ How It Works</div>
+            <div className="sec-label"> <h3>How It Works..?</h3></div>
             {[
-              ['🔗', 'Connect Freighter (Testnet)'],
-              ['🗳️', 'Pick your answer'],
-              ['⚡', 'Vote triggers inter-contract call'],
-              ['🪙', 'Token reward sent to your wallet'],
-              ['📡', 'Results refresh every 10s'],
+              ['1️⃣', 'Connect Freighter (Testnet)'],
+              ['2️⃣', 'Pick your answer'],
+              ['3️⃣', 'Vote triggers inter-contract call'],
+              ['4️⃣', 'Token reward sent to your wallet'],
+              ['5️⃣', 'Results refresh every 10s'],
             ].map(([icon, text], i) => (
               <div key={i} className="how-row">
                 <span className="how-icon">{icon}</span>
@@ -511,7 +511,7 @@ export default function App() {
 
           {/* Deploy info */}
           <div className="card fade-up">
-            <div className="sec-label">🚀 Deployment</div>
+            <div className="sec-label"><h3>Deployment</h3></div>
             {[
               ['Poll Contract', CONTRACT_ID, `https://stellar.expert/explorer/testnet/contract/${CONTRACT_ID}`],
               ['Token Contract', TOKEN_CONTRACT, `https://stellar.expert/explorer/testnet/contract/${TOKEN_CONTRACT}`],
@@ -529,7 +529,7 @@ export default function App() {
       </main>
 
       <footer className="footer">
-        StellarPoll · Green Belt · Stellar Journey to Mastery · Testnet
+        StellarPoll -- A Live Polling Decentralized Application
       </footer>
 
       {showModal && (
