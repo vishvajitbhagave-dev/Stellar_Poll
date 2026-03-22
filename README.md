@@ -1,29 +1,29 @@
-# ◈ StellarPoll — Green Belt Submission
+# ◈ StellarPoll 
 
 > Production-ready on-chain polling dApp with inter-contract calls, custom token rewards, CI/CD pipeline, and full mobile responsive design.
 
 ---
 
-## 🔗 Important Links
+##  Important Links
 
 | Item | Link |
 |---|---|
-| 🌐 GitHub Repository | https://github.com/vishvajitbhagave-dev/Stellar_Poll |
-| 🌐 Live Demo | [Add your Vercel link here] |
-| 📹 Demo Video | [Add your video link here] |
-| 📋 Poll Contract | https://stellar.expert/explorer/testnet/contract/CDSVXG7VBBP2IASOP4V4ARRZNVPI2VHX5ARJEY7ZZD6K2WCGFAC54S4V |
-| 🪙 Token Contract | https://stellar.expert/explorer/testnet/contract/CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCNM |
-| 🔗 Deploy TX | https://stellar.expert/explorer/testnet/tx/41fc8025e30c4a788b2deac516a60cfa761976b185d7b6b61d6c93e5e6043b7d |
+|  GitHub Repository | https://github.com/vishvajitbhagave-dev/Stellar_Poll |
+|  Live Demo | https://stellar-poll-lac.vercel.app/ |
+|  Demo Video | [Add your video link here] |
+|  Poll Contract | https://stellar.expert/explorer/testnet/contract/CDSVXG7VBBP2IASOP4V4ARRZNVPI2VHX5ARJEY7ZZD6K2WCGFAC54S4V |
+|  Token Contract | https://stellar.expert/explorer/testnet/contract/CDLZFC3SYJYDZT7K67VZ75HPJVIEUVNIXF47ZG2FB2RMQQVU2HHGCNM |
+|  Deploy TX | https://stellar.expert/explorer/testnet/tx/41fc8025e30c4a788b2deac516a60cfa761976b185d7b6b61d6c93e5e6043b7d |
 
 ---
 
-## 📖 Project Description
+##  Project Description
 
 **StellarPoll** is a production-ready decentralized polling dApp on Stellar Testnet. Every vote is recorded on-chain via Soroban smart contracts, with inter-contract calls that automatically reward voters with POLL tokens.
 
 ---
 
-## ✅ Green Belt Requirements — All Fulfilled
+##  Green Belt Requirements — All Fulfilled
 
 | Requirement | Implementation | Status |
 |---|---|---|
@@ -37,7 +37,7 @@
 
 ---
 
-## ⚡ Inter-Contract Call Explained
+##  Inter-Contract Call Explained
 
 When a user votes, the Poll Contract makes an **inter-contract call** to the Token Contract:
 
@@ -95,16 +95,16 @@ The app is fully responsive across all screen sizes:
 
 ---
 
-## 📊 Screenshots
+## Screenshots
 
 ### Mobile View
 > Add screenshot of app on mobile screen
 
 ### CI/CD Pipeline
-> Add screenshot of GitHub Actions showing green checkmark
+<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/b897937d-0c7f-4205-9b8a-803c4fc55b62" />
 
 ### Wallet Options
-> Add screenshot of wallet modal
+
 
 ### Test Output
 ```
@@ -114,7 +114,7 @@ Tests  35 passed (35)
 
 ---
 
-## 🚀 Setup — Run Locally
+## Setup — Run Locally
 
 ```bash
 git clone https://github.com/vishvajitbhagave-dev/Stellar_Poll
@@ -127,7 +127,7 @@ Open **http://localhost:5173**
 
 ---
 
-## 🧪 Running Tests
+##  Running Tests
 
 ```bash
 npm test
@@ -135,7 +135,7 @@ npm test
 
 ---
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 stellar-poll/
@@ -161,23 +161,7 @@ stellar-poll/
 
 ---
 
-## 📝 Commit History (8+ commits)
-
-| # | Commit Message |
-|---|---|
-| 1 | `feat: Initial Orange Belt StellarPoll setup` |
-| 2 | `feat: Add skeleton loading states and progress rings` |
-| 3 | `feat: Add caching layer and auto-refresh` |
-| 4 | `feat: Add 30 unit tests with Vitest` |
-| 5 | `feat: Add inter-contract call for token rewards` |
-| 6 | `feat: Add full mobile responsive design` |
-| 7 | `feat: Add CI/CD pipeline with GitHub Actions` |
-| 8 | `feat: Add token badge and inter-contract UI` |
-| 9 | `docs: Complete Green Belt README documentation` |
-
----
-
-## 📋 Contract Addresses
+##  Contract Addresses
 
 | Contract | Address |
 |---|---|
@@ -186,7 +170,7 @@ stellar-poll/
 
 ---
 
-## 🔗 Resources
+##  Resources
 
 - [Stellar Testnet Explorer](https://stellar.expert/explorer/testnet)
 - [Freighter Wallet](https://freighter.app)
