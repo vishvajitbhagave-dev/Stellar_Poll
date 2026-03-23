@@ -113,7 +113,9 @@ The app is fully responsive across all screen sizes:
 
 
 ### CI/CD Pipeline
-<img width="959" height="503" alt="image" src="https://github.com/user-attachments/assets/b897937d-0c7f-4205-9b8a-803c4fc55b62" />
+<img width="1919" height="863" alt="Screenshot 2026-03-23 133740" src="https://github.com/user-attachments/assets/09096c76-34fe-4ed7-9dde-6b70958749d2" />
+
+<img width="1919" height="858" alt="Screenshot 2026-03-23 133816" src="https://github.com/user-attachments/assets/edfa157b-a9a7-4131-9fe2-eeac555c86ba" />
 
 
 ### Mobile View
