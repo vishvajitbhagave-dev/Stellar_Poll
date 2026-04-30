@@ -186,7 +186,6 @@ stellar-poll/
 ---
 
 ##  Resources
-
 - [Stellar Testnet Explorer](https://stellar.expert/explorer/testnet)
 - [Freighter Wallet](https://freighter.app)
 - [Soroban Docs](https://soroban.stellar.org)
